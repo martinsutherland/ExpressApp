@@ -9,7 +9,7 @@ const MongoClient = require('mongodb').MongoClient;
 const createRouter = require('./helpers/create_router.js');
 
 
-MongoClient.connect('mongodb://0.0.0.0:27017')
+MongoClient.connect('mongodb://mongodb:27017')
 .then((client) => {
   const db = client.db('dataSource');
 
